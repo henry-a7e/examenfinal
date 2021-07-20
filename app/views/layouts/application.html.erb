@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Final</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  
+    <%= link_to "garments", garments_path %>
+    <%= link_to "brands", brands_path %>
+    <%= link_to "garment_types", garment_types_path %>
+    <%= link_to "person_garments", person_garments_path %>
+    <%= link_to "transmissions", transmissions_path %>
+    <%= link_to "people", people_path %>
+
+
+   <%= render 'shared/navbar' %>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>

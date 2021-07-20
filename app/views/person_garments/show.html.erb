@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @person_garment.person_id %>
+</p>
+
+<p>
+  <strong>Transmission:</strong>
+  <%= @person_garment.transmission_id %>
+</p>
+
+<p>
+  <strong>Garment:</strong>
+  <%= @person_garment.garment_id %>
+</p>
+
+<%= link_to 'Edit', edit_person_garment_path(@person_garment) %> |
+<%= link_to 'Back', person_garments_path %>
